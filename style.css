@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1.618;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+@media screen and (min-width: 600px) {
+  body {
+    font-size: calc(16px  +  6  * ((100vw -  600px ) / 300 ));
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  border: none;
+  font-size: inherit;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+textarea,
+input:not([type=range]) {
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.5) inset;
+}
+
+.map {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.controls {
+  position: absolute;
+  top: 1vmin;
+  left: 1vmin;
+  max-height: 98vmin;
+  background-color: #fff;
+  z-index: 2;
+  padding: 0.5vmin;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.5);
+  max-width: 25vmin;
+}
+
+.field {
+  margin: 0.5vmin;
+}
+
+.label:after {
+  content: ':';
+}
+
+.help-text {
+  font-size: 0.6em;
+  color: #aaa;
+}
