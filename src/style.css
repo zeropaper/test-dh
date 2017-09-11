@@ -38,6 +38,7 @@ textarea {
 textarea {
   min-width: 100%;
   max-width: 100%;
+  font-size: 0.5em;
 }
 
 textarea,
@@ -75,7 +76,12 @@ input:not([type=range]) {
   content: ':';
 }
 
+.note-multiple,
 .help-text {
   font-size: 0.6em;
   color: #aaa;
+}
+
+.note-multiple {
+
 }

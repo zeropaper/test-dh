@@ -1,0 +1,30 @@
+{
+  "name": "test-dh",
+  "version": "1.0.0",
+  "description": "A test job for a company I'd like to work for.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeropaper/test-dh.git"
+  },
+  "keywords": [
+    "job",
+    "test"
+  ],
+  "author": "Valentin Vago <zeropaper@irata.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeropaper/test-dh/issues"
+  },
+  "homepage": "https://github.com/zeropaper/test-dh#readme",
+  "devDependencies": {
+    "leaflet": "^1.2.0",
+    "lodash.debounce": "^4.0.8",
+    "neutrino": "^6.1.8",
+    "neutrino-preset-web": "^6.1.8"
+  }
+}
