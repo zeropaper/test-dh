@@ -4,12 +4,12 @@ module.exports = {
   },
 
   use: ['neutrino-preset-web', {
-    hot: false,
+    hot: true,
 
-    polyfills: {
-      async: false,
-      babel: false
-    },
+    // polyfills: {
+    //   async: false,
+    //   babel: false
+    // },
 
     html: {
       title: 'Some test for a job',

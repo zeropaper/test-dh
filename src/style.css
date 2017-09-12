@@ -9,41 +9,41 @@ body {
   line-height: 1.618;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-size: 16px;
 }
-@media screen and (min-width: 600px) {
-  body {
-    font-size: calc(16px  +  6  * ((100vw -  600px ) / 300 ));
-  }
-}
-@media screen and (min-width: 900px) {
-  body {
-    font-size: 22px;
-  }
-}
 
 
-input,
+input[type=text],
+input[type=range],
 textarea {
   width: 100%;
+}
+
+input[type=text],
+textarea {
   padding: 0.2em 0.6em;
   border-radius: 3px;
-  border: none;
+  border: 1px solid currentColor;
   font-size: inherit;
+}
+
+input[type=text]:invalid {
+  color: #a33;
 }
 
 textarea {
   min-width: 100%;
   max-width: 100%;
-  font-size: 0.5em;
+  min-height: 20vmin;
 }
 
 textarea,
-input:not([type=range]) {
+input[type=text] {
   box-shadow: 0 0 3px 0 rgba(0,0,0,.5) inset;
+}
+
+label {
+  display: block;
 }
 
 .map {
@@ -78,10 +78,6 @@ input:not([type=range]) {
 
 .note-multiple,
 .help-text {
-  font-size: 0.6em;
+  font-size: 0.85em;
   color: #aaa;
-}
-
-.note-multiple {
-
 }

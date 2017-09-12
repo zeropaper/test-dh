@@ -2,12 +2,23 @@
 
 A test job for a company I'd like to work for.
 
+## Install
+
+You will need git, node.js and npm installed and then
+
+````sh
+git clone https://github.com/zeropaper/test-dh.git
+cd test-dh
+npm i
+````
+
 ## Build
 
-npm run build
+First, install (see above) and then:  
+`npm run build`
 
+## Development
 
-## Dependencies
-
-## Notes
+First, install (see above) and then:  
+`npm run start`
 
