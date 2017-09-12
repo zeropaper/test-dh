@@ -185,8 +185,8 @@ module.exports = function() {
   radiusInput.addEventListener('change', changeListener);
   verifCheckbox.addEventListener('change', changeListener);
   //
-  addressInput.value = 'Weichselstrasse 6, 10247 Berlin';
-  changeListener();
+  // addressInput.value = 'Weichselstrasse 6, 10247 Berlin';
+  // changeListener();
 };
 
 
